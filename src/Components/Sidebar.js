@@ -28,21 +28,12 @@ export const Sidebar = ({ isOpen }) => {
                         <S.NavLink>NOVO CONTRATO</S.NavLink>
                     </S.NavItem>
                 </Link>
-                <Link to="/">
+                <Link to="/saques">
                     <S.NavItem>
-                        <S.NavLink>SACAR</S.NavLink>
+                        <S.NavLink>SAQUES</S.NavLink>
                     </S.NavItem>
                 </Link>
-                <Link to="/">
-                    <S.NavItem>
-                        <S.NavLink>NEWS</S.NavLink>
-                    </S.NavItem>
-                </Link>
-                <Link to="/">
-                    <S.NavItem>
-                        <S.NavLink>VALIDAR DOCS</S.NavLink>
-                    </S.NavItem>
-                </Link>
+
             </S.Mapper>
 
 

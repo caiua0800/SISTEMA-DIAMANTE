@@ -11,6 +11,8 @@ import { ContratosProvider } from './ContextAPI/ContratosContext'; // Importar o
 import Token from './Components/NovoContrato';
 import PrivateRoute from './Routes/PrivateRoute';
 import UserPage from './Components/UserPage';
+import SignUpPage from './Components/SignUp';
+import { Saques } from './Components/Saques';
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -81,6 +83,16 @@ function AuthenticatedLayout({ open, setOpen }) {
               <Navigate to="/login" />
             )
           } />
+          <Route path="/saques" element={
+            currentUser ? (
+              <PrivateRoute>
+                <Saques />
+              </PrivateRoute>
+            ) : (
+              <Navigate to="/login" />
+            )
+          } />
+          <Route path="/cadastrar" element={<SignUpPage />} /> {/* Adiciona a nova rota */}
         </Routes>
       </A.MainContent>
     </>

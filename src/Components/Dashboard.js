@@ -41,7 +41,7 @@ export default function Dashboard() {
 
     }, [userProfile, saldoTotal]); 
     
-    console.log(saldoDisponivelPlataforma / saldoTotalPlataforma)
+
 
     return (
         <D.DashboardContainer>

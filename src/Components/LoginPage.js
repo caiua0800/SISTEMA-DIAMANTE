@@ -72,7 +72,7 @@ const LoginPage = () => {
             <ErrorBar />
           </ErrorPopup>
         )}
-        <SignUpLink to="/signup">
+        <SignUpLink to="/cadastrar">
           Não possui uma conta? <SignUpText>Cadastre-se Já</SignUpText>
         </SignUpLink>
       </LoginBox>
